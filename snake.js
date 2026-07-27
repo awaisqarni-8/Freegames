@@ -87,3 +87,14 @@ function draw() {
 }
 
 const game = setInterval(draw, 120);
+document.getElementById("startGame").addEventListener("click", () => {
+    gameRunning = true;
+});
+
+document.getElementById("pauseGame").addEventListener("click", () => {
+    gameRunning = false;
+});
+
+document.getElementById("restartGame").addEventListener("click", () => {
+    location.reload();
+});
