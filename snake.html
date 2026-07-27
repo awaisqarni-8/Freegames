@@ -3,25 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Snake Game | FreeGames</title>
 
 <link rel="stylesheet" href="style.css">
 
 <style>
-<div class="game-controls">
-
-<button id="startGame">▶ Start</button>
-
-<button id="pauseGame">⏸ Pause</button>
-
-<button id="restartGame">🔄 Restart</button>
-
-<a href="games.html">
-<button>⬅ Back</button>
-</a>
-
-</div>
 body{
 background:#0b1120;
 display:flex;
@@ -55,6 +41,20 @@ font-weight:bold;
 
 <h1>🐍 Snake Game</h1>
 
+<div class="game-controls">
+
+<button id="startGame">▶ Start</button>
+
+<button id="pauseGame">⏸ Pause</button>
+
+<button id="restartGame">🔄 Restart</button>
+
+<a href="games.html">
+<button>⬅ Back</button>
+</a>
+
+</div>
+
 <canvas id="game" width="400" height="400"></canvas>
 
 <div class="score-board">
@@ -64,6 +64,7 @@ font-weight:bold;
 <h2 id="highScore">High Score : 0</h2>
 
 </div>
+
 <div class="mobile-controls">
 
 <button id="upBtn">⬆️</button>
