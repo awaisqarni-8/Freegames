@@ -343,3 +343,86 @@ flex-wrap:wrap;
 }
 
 }
+html{
+scroll-behavior:smooth;
+}
+
+button,
+.signupBtn,
+.playNow{
+transition:.35s ease;
+}
+
+button:hover,
+.signupBtn:hover,
+.playNow:hover{
+transform:translateY(-5px) scale(1.03);
+}
+
+.categoryCard,
+.gameCard{
+transition:.35s ease;
+}
+
+.categoryCard:hover,
+.gameCard:hover{
+transform:translateY(-10px);
+}
+
+.hero h1{
+animation:fadeUp 1s ease;
+}
+
+.hero p{
+animation:fadeUp 1.3s ease;
+}
+
+.heroSearch{
+animation:fadeUp 1.6s ease;
+}
+
+.playNow{
+animation:fadeUp 1.9s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(50px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+body{
+
+background:linear-gradient(
+180deg,
+#08111f,
+#0f172a,
+#111827
+);
+
+}
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+background:#2563eb;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#3b82f6;
+}
