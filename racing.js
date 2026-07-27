@@ -134,3 +134,30 @@ location.reload();
 }
 
 }
+function drawScore(){
+
+ctx.fillStyle="white";
+ctx.font="24px Arial";
+ctx.fillText("Score : "+score,20,35);
+
+}
+
+function gameLoop(){
+
+if(!gameRunning) return;
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+drawRoad();
+
+drawPlayer();
+
+drawEnemies();
+
+checkCollision();
+
+drawScore();
+
+requestAnimationFrame(gameLoop);
+
+}
