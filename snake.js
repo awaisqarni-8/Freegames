@@ -1,3 +1,9 @@
+let gameRunning = false;
+
+let highScore = localStorage.getItem("highScore") || 0;
+
+document.getElementById("highScore").innerText =
+"High Score : " + highScore;
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
