@@ -11,23 +11,20 @@ window.location.href="snake.html";
 break;
 
 case 1:
-alert("racing.html");
+window.location.href = "racing.html";
 break;
 
 case 2:
-alert("flappybird.html");
-break;
+window.location.href =        ("flappybird.html");break;
 
 case 3:
-alert("tictactoe.html");
-break;
+window.location.href = ("tictactoe.html");break;
 
 case 4:
-alert("chess.html");
-break;
+window.location.href = ("chess.html"); break;
 
 case 5:
-alert("memory.html");
+window.location.href = ("memory.html");
 break;
 
 }
