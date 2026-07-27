@@ -11,23 +11,23 @@ window.location.href="snake.html";
 break;
 
 case 1:
-alert("Car Racing Coming Soon");
+alert("racing.html");
 break;
 
 case 2:
-alert("Flappy Bird Coming Soon");
+alert("flappybird.html");
 break;
 
 case 3:
-alert("Tic Tac Toe Coming Soon");
+alert("tictactoe.html");
 break;
 
 case 4:
-alert("Chess Coming Soon");
+alert("chess.html");
 break;
 
 case 5:
-alert("Memory Game Coming Soon");
+alert("memory.html");
 break;
 
 }
