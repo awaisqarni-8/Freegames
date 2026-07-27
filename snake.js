@@ -31,6 +31,7 @@ function changeDirection(e) {
 }
 
 function draw() {
+if (!gameRunning) return;
   ctx.fillStyle = "#000";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
