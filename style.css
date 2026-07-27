@@ -138,3 +138,94 @@ transition:.3s;
 .playNow:hover{
 transform:translateY(-4px);
 }
+.categories{
+padding:70px 8%;
+}
+
+.categories h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.categoryGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+.categoryCard{
+background:#1e293b;
+padding:35px 20px;
+text-align:center;
+border-radius:18px;
+font-size:22px;
+font-weight:600;
+cursor:pointer;
+transition:.35s;
+border:2px solid transparent;
+}
+
+.categoryCard:hover{
+transform:translateY(-8px);
+background:#2563eb;
+border-color:#38bdf8;
+box-shadow:0 15px 30px rgba(37,99,235,.4);
+}
+
+.popularGames{
+padding:70px 8%;
+}
+
+.popularGames h2{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.gamesGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.gameCard{
+background:#111827;
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.gameCard:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(37,99,235,.35);
+}
+
+.gameCard h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.gameCard p{
+opacity:.8;
+margin-bottom:20px;
+}
+
+.gameCard button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.gameCard button:hover{
+transform:scale(1.05);
+}
