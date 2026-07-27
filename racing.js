@@ -65,3 +65,72 @@ function drawPlayer() {
         player.height
     );
 }
+const enemies = [
+{
+x:120,
+y:-150,
+width:60,
+height:100,
+color:"yellow"
+},
+{
+x:220,
+y:-400,
+width:60,
+height:100,
+color:"lime"
+}
+];
+
+function drawEnemies(){
+
+for(let i=0;i<enemies.length;i++){
+
+let e=enemies[i];
+
+ctx.fillStyle=e.color;
+
+ctx.fillRect(e.x,e.y,e.width,e.height);
+
+e.y+=player.speed+2;
+
+if(e.y>canvas.height){
+
+e.y=-150;
+
+e.x=(Math.random()>0.5)?120:220;
+
+score++;
+
+}
+
+}
+
+}
+
+function checkCollision(){
+
+for(let i=0;i<enemies.length;i++){
+
+let e=enemies[i];
+
+if(
+
+player.x<e.x+e.width &&
+player.x+player.width>e.x &&
+player.y<e.y+e.height &&
+player.y+player.height>e.y
+
+){
+
+gameRunning=false;
+
+alert("💥 Game Over!\nScore : "+score);
+
+location.reload();
+
+}
+
+}
+
+}
