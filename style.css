@@ -426,3 +426,27 @@ border-radius:10px;
 ::-webkit-scrollbar-thumb:hover{
 background:#3b82f6;
 }
+.playBtn{
+background:linear-gradient(145deg,#2563eb,#7c3aed);
+color:#fff;
+padding:14px 30px;
+border:none;
+border-radius:15px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+box-shadow:
+0 8px 20px rgba(37,99,235,.45),
+inset 0 2px 2px rgba(255,255,255,.25);
+transition:.3s;
+}
+
+.playBtn:hover{
+transform:translateY(-4px);
+box-shadow:
+0 15px 30px rgba(37,99,235,.6);
+}
+
+.playBtn:active{
+transform:scale(.96);
+}
