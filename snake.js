@@ -128,3 +128,18 @@ gameRunning = false;
 document.getElementById("restartGame").onclick = () => {
 location.reload();
 };
+document.getElementById("upBtn").onclick = () => {
+if(direction !== "DOWN") direction = "UP";
+};
+
+document.getElementById("downBtn").onclick = () => {
+if(direction !== "UP") direction = "DOWN";
+};
+
+document.getElementById("leftBtn").onclick = () => {
+if(direction !== "RIGHT") direction = "LEFT";
+};
+
+document.getElementById("rightBtn").onclick = () => {
+if(direction !== "LEFT") direction = "RIGHT";
+};
