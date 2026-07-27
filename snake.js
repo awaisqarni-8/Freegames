@@ -79,9 +79,13 @@ if (!gameRunning) return;
     headX >= canvas.width ||
     headY >= canvas.height
   ) {
-    clearInterval(game);
-    alert("Game Over!\nScore: " + score);
-    location.reload();
+    if(score > highScore){
+    highScore = score;
+    localStorage.setItem("highScore", highScore);
+}
+
+alert("Game Over!\nScore: " + score);
+location.reload();
   }
 
   snake.unshift(newHead);
