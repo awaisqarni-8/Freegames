@@ -88,3 +88,43 @@ let newHead={
 x:headX,
 y:headY
 };
+if (
+headX < 0 ||
+headY < 0 ||
+headX >= canvas.width ||
+headY >= canvas.height ||
+collision(newHead, snake)
+){
+
+if(score > highScore){
+highScore = score;
+localStorage.setItem("highScore", highScore);
+}
+
+document.getElementById("highScore").innerText =
+"High Score : " + highScore;
+
+alert("🎮 Game Over!\nScore : " + score);
+
+location.reload();
+
+return;
+}
+
+snake.unshift(newHead);
+
+}
+
+const game = setInterval(draw,120);
+
+document.getElementById("startGame").onclick = () => {
+gameRunning = true;
+};
+
+document.getElementById("pauseGame").onclick = () => {
+gameRunning = false;
+};
+
+document.getElementById("restartGame").onclick = () => {
+location.reload();
+};
