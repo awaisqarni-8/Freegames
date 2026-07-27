@@ -98,3 +98,14 @@ requestAnimationFrame(draw);
 }
 
 draw(); 
+document.getElementById("start").onclick = () => {
+
+if(!gameRunning){
+
+gameRunning = true;
+
+draw();
+
+}
+
+};
