@@ -53,7 +53,7 @@ document.addEventListener("keydown", (e) => {
 function drawRoad() {
 
     ctx.fillStyle = "#2f2f2f";
-    ctx.fillRect(road.x, 0, road.width, canvas.height);
+    ctx.drawImage(roadImg, 80, 0, 240, canvas.height);
 
     ctx.fillStyle = "white";
 
