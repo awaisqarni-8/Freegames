@@ -72,12 +72,13 @@ function drawPlayer() {
 
     ctx.fillStyle = "#ff0000";
 
-    ctx.fillRect(
-        player.x,
-        player.y,
-        player.width,
-        player.height
-    );
+    ctx.drawImage(
+playerImg,
+player.x,
+player.y,
+player.width,
+player.height
+);
 }
 const enemies = [
 {
