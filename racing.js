@@ -50,22 +50,56 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-function drawRoad() {
+function drawRoad(){
 
-    ctx.fillStyle = "#2f2f2f";
-    ctx.drawImage(roadImg, 80, 0, 240, canvas.height);
+// Grass
+ctx.fillStyle="#1faa00";
+ctx.fillRect(0,0,70,canvas.height);
+ctx.fillRect(330,0,70,canvas.height);
 
-    ctx.fillStyle = "white";
+// Road
+ctx.fillStyle="#3a3a3a";
+ctx.fillRect(70,0,260,canvas.height);
 
-    for (let i = road.lineY; i < canvas.height; i += 50) {
-        ctx.fillRect(195, i, 10, 30);
-    }
+// Road Borders
+ctx.fillStyle="white";
+ctx.fillRect(70,0,4,canvas.height);
+ctx.fillRect(326,0,4,canvas.height);
 
-    road.lineY += player.speed;
+// 4 Lane Divider Lines
+ctx.fillStyle="white";
 
-    if (road.lineY >= 50) {
-        road.lineY = 0;
-    }
+for(let y=-40;y<canvas.height;y+=60){
+
+ctx.fillRect(135,y+road.lineY,4,30);
+
+ctx.fillRect(200,y+road.lineY,4,30);
+
+ctx.fillRect(265,y+road.lineY,4,30);
+
+}
+
+road.lineY += player.speed;
+
+if(road.lineY>=60){
+road.lineY=0;
+}
+
+// Trees
+ctx.fillStyle="#0b7a00";
+
+for(let i=0;i<8;i++){
+
+ctx.beginPath();
+ctx.arc(35,i*90+40,18,0,Math.PI*2);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(365,i*90+40,18,0,Math.PI*2);
+ctx.fill();
+
+}
+
 }
 
 function drawPlayer() {
