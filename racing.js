@@ -1,3 +1,17 @@
+const playerImg = new Image();
+playerImg.src = "images/player-car.png";
+
+const enemyRed = new Image();
+enemyRed.src = "images/enemy-red.png";
+
+const enemyBlue = new Image();
+enemyBlue.src = "images/enemy-blue.png";
+
+const enemyYellow = new Image();
+enemyYellow.src = "images/enemy-yellow.png";
+
+const roadImg = new Image();
+roadImg.src = "images/road.png";
 const canvas = document.getElementById("race");
 const ctx = canvas.getContext("2d");
 
