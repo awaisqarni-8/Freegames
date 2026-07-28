@@ -105,7 +105,15 @@ let e=enemies[i];
 
 ctx.fillStyle=e.color;
 
-ctx.fillRect(e.x,e.y,e.width,e.height);
+const enemyImages = [enemyRed, enemyBlue, enemyYellow];
+
+ctx.drawImage(
+    enemyImages[i % enemyImages.length],
+    e.x,
+    e.y,
+    e.width,
+    e.height
+);
 
 e.y+=player.speed+2;
 
